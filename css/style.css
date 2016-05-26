@@ -1,0 +1,11 @@
+#game {
+	background-color: yellow;
+}
+#board{
+	background-color: blue;
+}
+.tile{
+	background-color: salmon;
+	float: left;
+	border: 2px solid grey;
+}
