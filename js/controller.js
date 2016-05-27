@@ -15,6 +15,9 @@ angular.module('gridPartyApp', [])
 
 	$scope.createTiles = function(){
 		if ($scope.gridSize.x != null && $scope.gridSize.y != null){
+			//remove old tiles if any
+			$('.tile').remove();
+
 			// create tiles
 			for (i = 1; i <= $scope.gridSize.x * $scope.gridSize.y; i++){
 				board.append('<div class="tile">'+i+'</div>')
