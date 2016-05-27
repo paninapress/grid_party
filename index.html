@@ -8,6 +8,13 @@
 
 </head>
 <body ng-controller="GridPartyCtrl">
+	<div>Set game parameters:
+		<p>
+			X: <input type="text" name="gridSize" ng-model="gridSize.x">
+			Y: <input type="text" name="gridSize" ng-model="gridSize.y">
+			<input type="submit" id="submit" value="Submit" ng-click="createTiles();"/>
+		</p>
+	</div>
 	<div id="game">
 		<div id="board"></div>
 	</div>
